@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@mipmap/ic_chat_head_image1copy2"/>
+
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left">
+
+            <com.github.library.bubbleview.BubbleTextVew
+                android:id="@+id/left_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                app:arrowWidth="8dp"
+                app:angle="8dp"
+                app:arrowHeight="10dp"
+                app:arrowPosition="14dp"
+                app:arrowLocation="left"
+                app:bubbleColor="#7EC0EE"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right">
+
+            <com.github.library.bubbleview.BubbleTextVew
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                app:arrowWidth="8dp"
+                app:angle="8dp"
+                app:arrowHeight="10dp"
+                app:arrowPosition="14dp"
+                app:arrowLocation="right"
+                app:bubbleColor="#7EC0EE"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_chat_head_image1copy3"/>
+    </LinearLayout>
+
+</LinearLayout>
