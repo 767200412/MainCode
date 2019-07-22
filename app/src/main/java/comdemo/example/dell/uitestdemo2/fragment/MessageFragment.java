@@ -1,6 +1,7 @@
 package comdemo.example.dell.uitestdemo2.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import comdemo.example.dell.uitestdemo2.ChatViewActivity;
 import comdemo.example.dell.uitestdemo2.R;
 import comdemo.example.dell.uitestdemo2.adapter.CollectRecycleAdapter;
 import comdemo.example.dell.uitestdemo2.adapter.MyAdapter;
@@ -121,6 +123,9 @@ public class MessageFragment extends Fragment {
             public void OnItemClick(View view, GoodsEntity data) {
                 //此处进行监听事件的业务处理
                 Toast.makeText(getActivity(),"我是item", Toast.LENGTH_SHORT).show();
+                Intent intent;
+                intent = new Intent(getActivity(), ChatViewActivity.class);
+                startActivity(intent);
             }
         });
     }
