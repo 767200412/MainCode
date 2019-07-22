@@ -4,9 +4,13 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.text.SimpleDateFormat;
@@ -25,6 +29,7 @@ public class ChatViewActivity extends AppCompatActivity {
     private ListView msgListView;
     private EditText inputText;
     private Button send;
+    private ImageButton mImBtnface,mImBtnAdd;
     private MsgAdapter adapter;
 
     private List<Msg> msgList = new ArrayList<Msg>();
@@ -44,6 +49,8 @@ public class ChatViewActivity extends AppCompatActivity {
         send = (Button)findViewById(R.id.bt_send);
         msgListView = (ListView) findViewById(R.id.rv_chatList);
         msgListView.setAdapter(adapter);
+        mImBtnAdd = (ImageButton)findViewById(R.id.imageButton3);
+        mImBtnface = (ImageButton)findViewById(R.id.imageButton2);
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +64,29 @@ public class ChatViewActivity extends AppCompatActivity {
                 }
             }
         });
+
+        inputText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+               // Log.e("输入","onText"+s);
+                if(s !=""){
+                        //有输入，按钮可见 加号不可见
+                        mImBtnAdd.setVisibility(View.GONE);
+                        send.setVisibility(View.VISIBLE);
+
+
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
     }
 
     private void initMsgs() {
@@ -67,5 +97,6 @@ public class ChatViewActivity extends AppCompatActivity {
         Msg msg3 = new Msg("I am fine, too!", Msg.TYPE_RECEIVED);
         msgList.add(msg3);
     }
+
 
 }

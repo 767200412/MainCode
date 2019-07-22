@@ -11,43 +11,77 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:rightIcon="@mipmap/nav_ic_personal_card"
-        app:title="王小二-SBS浔兴"
-        android:layout_above="@+id/rv_chatList">
+        app:title="王小二-SBS浔兴">
     </com.hjq.bar.TitleBar>
 
     <ListView
         android:id="@+id/rv_chatList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:divider="#00000000"
+        android:layout_below="@+id/titleBar"
         android:layout_above="@+id/linearLayout">
 
     </ListView>
 
+
     <LinearLayout
-        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout">
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#e6fafafa">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@mipmap/bt_chat_voice1" />
+
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="6dp"
             android:layout_weight="6"
-            android:layout_height="50dp">
-            <EditText
-                android:id="@+id/et_content"
-                android:hint="请输入文字..."
-                android:textSize="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </android.support.design.widget.TextInputLayout>
+            android:background="@drawable/edit_background"
+            android:textSize="15dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@mipmap/bt_chat_emotion1" />
 
         <Button
             android:id="@+id/bt_send"
-            android:padding="10dp"
-            android:textSize="15dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button1_shape"
             android:text="发送"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/bt_chat_more1" />
     </LinearLayout>
 
 </RelativeLayout>
