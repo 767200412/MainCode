@@ -39,5 +39,7 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
     //https://blog.csdn.net/bi_diu1368/article/details/51491646自定义气泡控件
     implementation 'com.lguipeng.bubbleview:library:1.0.0' //添加依赖
+    //未读消息提示数字 小红点https://github.com/qstumn/BadgeView
+    implementation 'q.rorbin:badgeview:1.1.3'
 
 }

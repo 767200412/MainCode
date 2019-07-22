@@ -93,12 +93,30 @@ public class MessageFragment extends Fragment {
      * TODO 模拟数据
      */
     private void initData() {
-        for (int i=0;i<10;i++){
+        /*for (int i=0;i<10;i++){
             GoodsEntity goodsEntity=new GoodsEntity();
             goodsEntity.setGoodsName("模拟数据"+i);
             goodsEntity.setGoodsPrice("100"+i);
             goodsEntityList.add(goodsEntity);
-        }
+        }*/
+        GoodsEntity goodsEntity=new GoodsEntity();
+        goodsEntity.setGoodsName("关系管理助手");
+        goodsEntity.setGoodsPrice("[自定义消息]");
+        goodsEntityList.add(goodsEntity);
+        GoodsEntity goodsEntity2=new GoodsEntity();
+        goodsEntity2.setGoodsName("系统通知");
+        goodsEntity2.setGoodsPrice("[系统通知]");
+        goodsEntityList.add(goodsEntity2);
+        GoodsEntity goodsEntity3=new GoodsEntity();
+        goodsEntity3.setGoodsName("代办事项");
+        goodsEntity3.setGoodsPrice("[自定义消息]");
+        goodsEntityList.add(goodsEntity3);
+        GoodsEntity goodsEntity4=new GoodsEntity();
+        goodsEntity4.setGoodsName("通知助手助手");
+        goodsEntity4.setGoodsPrice("[系统通知]");
+        goodsEntityList.add(goodsEntity4);
+
+
     }
 
     /**
@@ -122,7 +140,7 @@ public class MessageFragment extends Fragment {
             @Override
             public void OnItemClick(View view, GoodsEntity data) {
                 //此处进行监听事件的业务处理
-                Toast.makeText(getActivity(),"我是item", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(),"我是item", Toast.LENGTH_SHORT).show();
                 Intent intent;
                 intent = new Intent(getActivity(), ChatViewActivity.class);
                 startActivity(intent);

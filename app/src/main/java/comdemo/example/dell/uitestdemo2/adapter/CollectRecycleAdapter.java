@@ -2,12 +2,16 @@ package comdemo.example.dell.uitestdemo2.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import q.rorbin.badgeview.Badge;
+import q.rorbin.badgeview.QBadgeView;
 
 import comdemo.example.dell.uitestdemo2.R;
 import comdemo.example.dell.uitestdemo2.bean.GoodsEntity;
@@ -50,7 +54,8 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
 //        holder.mItemGoodsImg;
         holder.mItemGoodsName.setText(data.goodsName);//获取实体类中的name字段并设置
         holder.mItemGoodsPrice.setText(data.goodsPrice);//获取实体类中的price字段并设置
-
+        holder.mItemTime.setText("08:50");
+        holder.badge.setBadgeNumber(position);
     }
 
     /**
@@ -68,12 +73,18 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
         private ImageView mItemGoodsImg;
         private TextView mItemGoodsName;
         private TextView mItemGoodsPrice;
+        private TextView mItemTime;
+        private Badge badge;
 
         public myViewHodler(View itemView) {
             super(itemView);
             mItemGoodsImg = (ImageView) itemView.findViewById(R.id.item_goods_img);
             mItemGoodsName = (TextView) itemView.findViewById(R.id.item_goods_name);
             mItemGoodsPrice = (TextView) itemView.findViewById(R.id.item_goods_price);
+            mItemTime = (TextView) itemView.findViewById(R.id.textView5);
+            badge = new QBadgeView(context).bindTarget(mItemTime);
+            badge.setBadgeGravity(Gravity.CENTER|Gravity.TOP);
+            badge.setGravityOffset(0,20,true);
             //点击事件放在adapter中使用，也可以写个接口在activity中调用
             //方法一：在adapter中设置点击事件
             itemView.setOnClickListener(new View.OnClickListener() {
