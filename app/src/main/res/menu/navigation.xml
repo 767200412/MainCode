@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_message"
+        android:icon="@mipmap/home_ic_message_unormal"
+        android:title="消息"/>
+
+    <item
+        android:id="@+id/tab_contacts"
+        android:icon="@mipmap/home_ic_contacts_normal"
+        android:title="通讯录"/>
+
+    <item
+        android:id="@+id/tab_management"
+        android:icon="@mipmap/home_ic_management_normal"
+        android:title="管理"/>
+
+    <item
+        android:id="@+id/tab_me"
+        android:icon="@mipmap/home_ic_me_normal"
+        android:title="我的"/>
+
+</menu>
