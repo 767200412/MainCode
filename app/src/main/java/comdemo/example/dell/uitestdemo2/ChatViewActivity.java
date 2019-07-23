@@ -91,13 +91,14 @@ public class ChatViewActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-               // Log.e("输入","onText"+s);
+               //Log.e("输入","onText"+s);
                 if(s !=""){
                         //有输入，按钮可见 加号不可见
                         mImBtnAdd.setVisibility(View.GONE);
                         send.setVisibility(View.VISIBLE);
                 }
                 else {
+                   // Log.e("为空:","s");
                     //没有输入 按钮不可见
                     mImBtnAdd.setVisibility(View.VISIBLE);
                     send.setVisibility(View.GONE);
@@ -106,6 +107,14 @@ public class ChatViewActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
+               // Log.e("输入框内容：",s.toString());
+                if(s.toString().equals(""))
+                {
+                    //Log.e("为空:","s");
+                    //没有输入 按钮不可见
+                    mImBtnAdd.setVisibility(View.VISIBLE);
+                    send.setVisibility(View.GONE);
+                }
             }
         });
     }

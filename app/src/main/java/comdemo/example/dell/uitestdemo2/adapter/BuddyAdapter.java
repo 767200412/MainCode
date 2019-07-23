@@ -73,11 +73,11 @@ public class BuddyAdapter extends BaseExpandableListAdapter {
         int count = getChildrenCount(groupPosition);
         groupCount.setText(String.valueOf(count));
         groupNameTextView.setText(getGroup(groupPosition).toString());
-        ivSelector.setImageResource(R.mipmap.ic_arrow_left);
+        ivSelector.setImageResource(R.mipmap.ic_arrow_left_down);
 
         // 更换展开分组图片
         if (!isExpanded) {
-            ivSelector.setImageResource(R.mipmap.ic_arrow_left_down);
+            ivSelector.setImageResource(R.mipmap.ic_arrow_left);
         }
         return convertView;
     }

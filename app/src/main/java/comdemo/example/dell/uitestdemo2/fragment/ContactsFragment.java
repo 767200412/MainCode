@@ -3,10 +3,13 @@ package comdemo.example.dell.uitestdemo2.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,16 +35,17 @@ public class ContactsFragment extends Fragment {
     private ExpandableListView elvCompany;
 
     private TextView tvLoadMore;
+    private HorizontalScrollView hs;
+    private LinearLayout ls;
+    private TextView title;
+    private BuddyAdapter adapter;
+
+    private String[] titleName = new String[]{"客户","供应商","加工商","服务商","物流"};
 
     // 群组名称（一级条目内容）
-    private String[] group = new String[] { "晃光五金","清顺辅料","360","安踏" };
+    private String[] group ;
 
-    private String[][] carsList = new String[][] {
-            {"张三", "李四", "王五", "赵六"},
-            {"张三"},
-            {"张三", "李四"},
-            {"张三", "李四", "王五"},
-    };
+    private String[][] carsList;
 
 
     public ContactsFragment() {
@@ -81,12 +85,25 @@ public class ContactsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_contacts, container, false);
 
+        hs = (HorizontalScrollView)view.findViewById(R.id.hs);
+        ls = (LinearLayout)view.findViewById(R.id.liner);
+        initView();
+
+        group = new String[] { "晃光五金","清顺辅料","360","安踏" };
+        carsList = new String[][]{
+                {"张三", "李四", "王五", "赵六"},
+                {"张三"},
+                {"张三", "李四"},
+                {"张三", "李四", "王五"},
+        };
+
         //tvLoadMore = (TextView) view.findViewById(R.id.tv_load_more);
         elvCompany = (ExpandableListView) view.findViewById(R.id.android_list);
-        BuddyAdapter adapter = new BuddyAdapter(group, carsList, getContext());
+        adapter = new BuddyAdapter(group, carsList, getContext());
         elvCompany.setAdapter(adapter);
 
         setListeners();
+
 
         return view;
     }
@@ -135,6 +152,27 @@ public class ContactsFragment extends Fragment {
         });
         */
 
+    }
+
+    private void initView(){
+        for(int i = 0; i < titleName.length;i++){
+            View view = LayoutInflater.from(getActivity()).inflate(R.layout.top_item,null);
+            title = (TextView)view.findViewById(R.id.titleView);
+            title.setText(titleName[i]);
+            title.setId(i);
+            ls.addView(view);
+        }
+
+
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 int id = v.getId();
+                Log.e("点击了",String.valueOf(id));
+                 //更新
+
+            }
+        });
     }
 
 

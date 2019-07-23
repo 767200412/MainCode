@@ -31,6 +31,20 @@
             android:background="@drawable/button4_shape"/>
     </LinearLayout>
 
+    <HorizontalScrollView
+        android:id="@+id/hs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/liner"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
     <ExpandableListView
         android:id="@+id/android_list"
         android:layout_width="match_parent"
