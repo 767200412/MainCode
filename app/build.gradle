@@ -41,5 +41,7 @@ dependencies {
     implementation 'com.lguipeng.bubbleview:library:1.0.0' //添加依赖
     //未读消息提示数字 小红点https://github.com/qstumn/BadgeView
     implementation 'q.rorbin:badgeview:1.1.3'
+    //使用GridLayout
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
 
 }

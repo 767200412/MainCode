@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="4"
+        app:rowCount="2" >
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="0"
+            app:layout_column="0"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_order"
+            android:text="快捷订单"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+           />
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="0"
+            app:layout_column="1"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_order_search"
+            android:text="订单查询"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="0"
+            app:layout_column="2"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_order_search"
+            android:text="产品相册"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="0"
+            app:layout_column="3"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_transfer"
+            android:text="转账"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="0"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_album"
+            android:text="手机相册"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="1"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_camera"
+            android:text="拍摄"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="2"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_small_shop"
+            android:text="微店"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+            android:id="@+id/t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="3"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:drawableTop="@mipmap/bt_chat_cloud"
+            android:text="企业云"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            />
+
+    </android.support.v7.widget.GridLayout>
+
+
+</LinearLayout>
