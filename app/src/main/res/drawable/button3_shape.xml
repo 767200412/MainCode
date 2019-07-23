@@ -5,7 +5,7 @@
 
 
     <!-- solid用于设置填充形状的颜色-->
-    <solid android:color="#fffffcf9"/>//#ff4694ff
+    <solid android:color="#ffffc36f"/>//#ff4694ff
     <!-- corners用于创建圆角（只用于形状是矩形）-->
     <corners
         android:radius="24dp"/>
