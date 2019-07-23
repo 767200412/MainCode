@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -85,6 +86,16 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
             badge = new QBadgeView(context).bindTarget(mItemTime);
             badge.setBadgeGravity(Gravity.CENTER|Gravity.TOP);
             badge.setGravityOffset(0,20,true);
+            badge.setOnDragStateChangedListener(new Badge.OnDragStateChangedListener() {
+                @Override
+                public void onDragStateChanged(int dragState, Badge badge, View targetView) {
+                    if (dragState == STATE_SUCCEED) {
+                        //Toast.makeText(context, String.valueOf(getAdapterPosition()), Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+
+
             //点击事件放在adapter中使用，也可以写个接口在activity中调用
             //方法一：在adapter中设置点击事件
             itemView.setOnClickListener(new View.OnClickListener() {

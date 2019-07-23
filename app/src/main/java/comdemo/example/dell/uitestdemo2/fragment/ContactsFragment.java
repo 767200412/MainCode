@@ -40,7 +40,7 @@ public class ContactsFragment extends Fragment {
     private TextView title;
     private BuddyAdapter adapter;
 
-    private String[] titleName = new String[]{"客户","供应商","加工商","服务商","物流"};
+    private String[] titleName = new String[]{"客户","供应商","加工商","服务商","物流","客户","客户","客户","客户"};
 
     // 群组名称（一级条目内容）
     private String[] group ;
@@ -89,22 +89,19 @@ public class ContactsFragment extends Fragment {
         ls = (LinearLayout)view.findViewById(R.id.liner);
         initView();
 
-        group = new String[] { "晃光五金","清顺辅料","360","安踏" };
-        carsList = new String[][]{
-                {"张三", "李四", "王五", "赵六"},
-                {"张三"},
-                {"张三", "李四"},
-                {"张三", "李四", "王五"},
-        };
+
+
 
         //tvLoadMore = (TextView) view.findViewById(R.id.tv_load_more);
         elvCompany = (ExpandableListView) view.findViewById(R.id.android_list);
+        /*
         adapter = new BuddyAdapter(group, carsList, getContext());
         elvCompany.setAdapter(adapter);
 
         setListeners();
 
 
+         */
         return view;
     }
 
@@ -156,14 +153,15 @@ public class ContactsFragment extends Fragment {
 
     private void initView(){
         for(int i = 0; i < titleName.length;i++){
-            View view = LayoutInflater.from(getActivity()).inflate(R.layout.top_item,null);
+            View view = LayoutInflater.from(getContext()).inflate(R.layout.top_item,null);
             title = (TextView)view.findViewById(R.id.titleView);
             title.setText(titleName[i]);
             title.setId(i);
             ls.addView(view);
+            title.setOnClickListener(new OnClickListenerImpl());
         }
 
-
+        /*
         title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -173,8 +171,33 @@ public class ContactsFragment extends Fragment {
 
             }
         });
+
+        */
     }
 
 
+    private class OnClickListenerImpl implements View.OnClickListener{
+        @Override
+        public void onClick(View v){
+            int id = v.getId();
+            Log.e("点击了",String.valueOf(id));
+            //更新
+
+            group = new String[] {"晃光五金"+id,"清顺辅料"+id,"360"+id,"安踏"+id };
+            carsList = new String[][]{
+                    {"张三", "李四", "王五", "赵六"},
+                    {"张三"},
+                    {"张三", "李四"},
+                    {"张三", "李四", "王五"},
+            };
+
+
+
+            adapter = new BuddyAdapter(group, carsList, getContext());
+            elvCompany.setAdapter(adapter);
+
+            setListeners();
+        }
+    }
 
 }
