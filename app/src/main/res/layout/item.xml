@@ -10,8 +10,8 @@
     <TextView
         android:id="@+id/item_goods_name"
         android:layout_width="125dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
         android:gravity="center_vertical|left"
         android:text="关系管理助手"
         android:textColor="#ff232323"
@@ -19,7 +19,8 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/item_goods_price"
         app:layout_constraintStart_toEndOf="@+id/item_goods_img"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/item_goods_img"
@@ -36,7 +37,7 @@
     <TextView
         android:id="@+id/item_goods_price"
         android:layout_width="125dp"
-        android:layout_height="38dp"
+        android:layout_height="30dp"
         android:gravity="center_vertical|left"
         android:text="#91自定义消息]"
         android:textColor="#ff999999"
@@ -60,5 +61,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        />
 </android.support.constraint.ConstraintLayout>

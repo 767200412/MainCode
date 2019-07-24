@@ -3,6 +3,7 @@ package comdemo.example.dell.uitestdemo2.adapter;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -38,7 +39,7 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
     @Override
     public myViewHodler onCreateViewHolder(ViewGroup parent, int viewType) {
         //创建自定义布局
-        View itemView = View.inflate(context, R.layout.item, null);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent ,false);
         return new myViewHodler(itemView);
     }
 
