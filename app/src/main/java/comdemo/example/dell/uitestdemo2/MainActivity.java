@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int i) {
                 navigation.getMenu().getItem(i).setChecked(true);
-                Log.e("id:",String.valueOf(navigation.getMenu().getItem(i).getItemId()));
+                //Log.e("id:",String.valueOf(navigation.getMenu().getItem(i).getItemId()));
                 refreshItemIcon();
                 //写滑动页面后做的事，使每一个fragmen与一个page相对应
                 switch (navigation.getMenu().getItem(i).getItemId()) {
