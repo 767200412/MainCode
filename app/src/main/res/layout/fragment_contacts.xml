@@ -9,22 +9,22 @@
         android:orientation="horizontal"
         android:background="#ffffffff">
         <EditText
-            android:layout_width="260dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginBottom="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:layout_marginLeft="16dp"
             android:drawableLeft="@mipmap/nav_ic_search_g1"
             android:background="@drawable/edit_background2"
             android:hint="请输入关键字"
             />
         <Button
-            android:layout_width="68dp"
+            android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
             android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
             android:text="关系管理"
             android:textColor="#ffffffff"
             android:textSize="12sp"
@@ -49,10 +49,12 @@
 
 
     <ExpandableListView
-                android:id="@+id/android_list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:groupIndicator="@null" />
+        android:id="@+id/android_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp"/>
 
 
 

@@ -15,7 +15,7 @@
             android:id="@+id/head_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_gravity="center"
             android:src="@mipmap/ic_chat_head_image1copy2"/>
 
         <LinearLayout
@@ -53,7 +53,7 @@
             android:id="@+id/right_layout"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_gravity="right">
+            android:layout_gravity="center">
 
             <com.github.library.bubbleview.BubbleTextVew
                 android:id="@+id/right_msg"

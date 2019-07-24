@@ -19,11 +19,11 @@
         app:titleSize="18sp"></com.hjq.bar.TitleBar>
 
     <LinearLayout
-        android:layout_width="398dp"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:orientation="horizontal"
+        android:layout_margin="8dp"
         android:background="@drawable/button2_shape"
-        android:layout_margin="8dp">
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -37,281 +37,281 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
             android:text="B2B财务管理转账支付"
             android:textColor="#ffff8f43"
-            android:textSize="12sp"
-            android:gravity="center_vertical"/>
+            android:textSize="12sp" />
 
         <Button
-            android:layout_width="80dp"
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
             android:layout_height="26dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/button3_shape"
             android:text="立即进入"
             android:textColor="#ffffffff"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="55dp"/>
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="398dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_margin="8dp"
         android:background="@drawable/button2_shape"
-        android:layout_margin="8dp">
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:text="运营"
             android:textColor="#ff232323"
-            android:textSize="17sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="17sp" />
+
         <android.support.v7.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
             app:columnCount="4"
-            app:rowCount="1"
-            android:layout_marginTop="24dp">
+            app:rowCount="1">
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="0"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_relationship"
+                android:gravity="center_horizontal"
                 android:text="关系管理"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="1"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_employees"
+                android:gravity="center_horizontal"
                 android:text="人事管理"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="2"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_card"
+                android:gravity="center_horizontal"
                 android:text="企业名片"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="3"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_permission"
+                android:gravity="center_horizontal"
                 android:text="权限设置"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="3"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
         </android.support.v7.widget.GridLayout>
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_width="398dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_margin="8dp"
         android:background="@drawable/button2_shape"
-        android:layout_margin="8dp">
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:text="办公"
             android:textColor="#ff232323"
-            android:textSize="17sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="17sp" />
+
         <android.support.v7.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
             app:columnCount="4"
-            app:rowCount="1"
-            android:layout_marginTop="24dp">
+            app:rowCount="1">
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="0"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_approval"
+                android:gravity="center_horizontal"
                 android:text="审批"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="1"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_task"
+                android:gravity="center_horizontal"
                 android:text="工作任务"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="2"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_clock"
+                android:gravity="center_horizontal"
                 android:text="打卡"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="3"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_order_approval"
+                android:gravity="center_horizontal"
                 android:text="企业云"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="3"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
         </android.support.v7.widget.GridLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="398dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_margin="8dp"
         android:background="@drawable/button2_shape"
-        android:layout_margin="8dp">
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:text="订单"
             android:textColor="#ff232323"
-            android:textSize="17sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="17sp" />
+
         <android.support.v7.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
             app:columnCount="4"
-            app:rowCount="2"
-            android:layout_marginTop="24dp">
+            app:rowCount="2">
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="0"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_purchase_order"
+                android:gravity="center_horizontal"
                 android:text="采购订单"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="1"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_sales_order"
+                android:gravity="center_horizontal"
                 android:text="销售订单"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="2"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_order_approval1"
+                android:gravity="center_horizontal"
                 android:text="订单审批"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_row="0"
-                app:layout_column="3"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_invoicing_information"
+                android:gravity="center_horizontal"
                 android:text="开票资料"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="3"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
 
             <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
                 android:id="@+id/t13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                app:layout_row="1"
-                app:layout_column="0"
-                app:layout_rowWeight="1"
-                app:layout_columnWeight="1"
                 android:drawableTop="@mipmap/management_ic_mirco_shop"
+                android:gravity="center_horizontal"
                 android:text="微店"
                 android:textColor="#ff232323"
                 android:textSize="14sp"
-                android:gravity="center_horizontal"
-                />
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="1"
+                app:layout_rowWeight="1" />
         </android.support.v7.widget.GridLayout>
 
     </LinearLayout>

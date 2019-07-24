@@ -14,8 +14,8 @@
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="37dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="11dp"
@@ -46,6 +46,7 @@
             android:layout_marginEnd="192dp"
             android:layout_marginTop="21dp"
             android:text="[在线] 361 - 总裁助理"
+            android:maxLines="1"
             android:textColor="#ff999999"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"

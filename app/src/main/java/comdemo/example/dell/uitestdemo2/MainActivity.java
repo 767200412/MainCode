@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
@@ -76,7 +77,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int i) {
                 navigation.getMenu().getItem(i).setChecked(true);
+                Log.e("id:",String.valueOf(navigation.getMenu().getItem(i).getItemId()));
+                refreshItemIcon();
                 //写滑动页面后做的事，使每一个fragmen与一个page相对应
+                switch (navigation.getMenu().getItem(i).getItemId()) {
+                    case R.id.tab_message:
+                        //选中时加载选中的图片
+                        navigation.getMenu().getItem(i).setIcon(R.mipmap.home_ic_message_unormal);
+                        //mViewPager.setCurrentItem(0);
+                        break;
+                    case R.id.tab_contacts:
+                        //选中时加载选中的图片
+                        navigation.getMenu().getItem(i).setIcon(R.mipmap.home_ic_contacts_unormal);
+                       // mViewPager.setCurrentItem(1);
+                        break;
+                    case R.id.tab_management:
+                        //选中时加载选中的图片
+                        navigation.getMenu().getItem(i).setIcon(R.mipmap.home_ic_management_unormal);
+                       // mViewPager.setCurrentItem(2);
+                        break;
+                    case R.id.tab_me:
+                        //选中时加载选中的图片
+                        navigation.getMenu().getItem(i).setIcon(R.mipmap.home_ic_me_unormal);
+                       // mViewPager.setCurrentItem(3);
+                        break;
+                }
             }
 
             @Override
