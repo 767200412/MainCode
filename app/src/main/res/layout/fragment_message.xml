@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         app:backButton="false"
         app:rightIcon="@mipmap/nav_ic_notice_b"
-        app:title="企业辅城">
+        app:title="企业辅城"
+        android:background="#ffffff">
 
     </com.hjq.bar.TitleBar>
 
