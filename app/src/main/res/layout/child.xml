@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="56dp"
     android:orientation="vertical">
 
     <android.support.constraint.ConstraintLayout
@@ -42,11 +42,13 @@
             android:id="@+id/textView6"
             android:layout_width="115dp"
             android:layout_height="18dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="192dp"
             android:layout_marginTop="21dp"
             android:text="[在线] 361 - 总裁助理"
             android:textColor="#ff999999"
             android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView" />
