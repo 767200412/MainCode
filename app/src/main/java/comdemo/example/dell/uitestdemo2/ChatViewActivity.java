@@ -103,7 +103,7 @@ public class ChatViewActivity extends AppCompatActivity {
                     linearLayout.setVisibility(View.GONE);
                 }
             }
-        }); 
+        });
 
         mImBtnAdd.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
