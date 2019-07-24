@@ -100,18 +100,22 @@ public class MessageFragment extends Fragment {
             goodsEntityList.add(goodsEntity);
         }*/
         GoodsEntity goodsEntity=new GoodsEntity();
+        goodsEntity.setImgPath(R.mipmap.ic_notice_up_down);
         goodsEntity.setGoodsName("关系管理助手");
         goodsEntity.setGoodsPrice("[自定义消息]");
         goodsEntityList.add(goodsEntity);
         GoodsEntity goodsEntity2=new GoodsEntity();
+        goodsEntity2.setImgPath(R.mipmap.ic_notice_system);
         goodsEntity2.setGoodsName("系统通知");
         goodsEntity2.setGoodsPrice("[系统通知]");
         goodsEntityList.add(goodsEntity2);
         GoodsEntity goodsEntity3=new GoodsEntity();
+        goodsEntity3.setImgPath(R.mipmap.ic_notice_items);
         goodsEntity3.setGoodsName("代办事项");
         goodsEntity3.setGoodsPrice("[自定义消息]");
         goodsEntityList.add(goodsEntity3);
         GoodsEntity goodsEntity4=new GoodsEntity();
+        goodsEntity4.setImgPath(R.mipmap.ic_notice_inform);
         goodsEntity4.setGoodsName("通知助手助手");
         goodsEntity4.setGoodsPrice("[系统通知]");
         goodsEntityList.add(goodsEntity4);

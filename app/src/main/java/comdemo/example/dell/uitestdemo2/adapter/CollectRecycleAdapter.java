@@ -55,6 +55,7 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
 //        holder.mItemGoodsImg;
         holder.mItemGoodsName.setText(data.goodsName);//获取实体类中的name字段并设置
         holder.mItemGoodsPrice.setText(data.goodsPrice);//获取实体类中的price字段并设置
+        holder.mItemGoodsImg.setImageResource(data.getImgPath());
         holder.mItemTime.setText("08:50");
         holder.badge.setBadgeNumber(position);
     }

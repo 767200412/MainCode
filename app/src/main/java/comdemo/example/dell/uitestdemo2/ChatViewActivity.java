@@ -14,6 +14,9 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
+import com.hjq.bar.OnTitleBarListener;
+import com.hjq.bar.TitleBar;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -33,6 +36,7 @@ public class ChatViewActivity extends AppCompatActivity {
     private ImageButton mImBtnface,mImBtnAdd;
     private LinearLayout linearLayout;
     private MsgAdapter adapter;
+    private TitleBar titleBar;
 
     private List<Msg> msgList = new ArrayList<Msg>();
 
@@ -54,6 +58,24 @@ public class ChatViewActivity extends AppCompatActivity {
         mImBtnAdd = (ImageButton)findViewById(R.id.imageButton3);
         mImBtnface = (ImageButton)findViewById(R.id.imageButton2);
         linearLayout = (LinearLayout)findViewById(R.id.linearLayout2);
+        titleBar = (TitleBar)findViewById(R.id.titleBar);
+        titleBar.setOnTitleBarListener(new OnTitleBarListener() {
+            @Override
+            public void onLeftClick(View v) {
+                finish();
+            }
+
+            @Override
+            public void onTitleClick(View v) {
+
+            }
+
+            @Override
+            public void onRightClick(View v) {
+
+            }
+        });
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

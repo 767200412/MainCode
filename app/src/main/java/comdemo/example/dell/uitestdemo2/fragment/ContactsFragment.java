@@ -1,6 +1,7 @@
 package comdemo.example.dell.uitestdemo2.fragment;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -179,10 +180,16 @@ public class ContactsFragment extends Fragment {
     private class OnClickListenerImpl implements View.OnClickListener{
         @Override
         public void onClick(View v){
-            int id = v.getId();
-            Log.e("点击了",String.valueOf(id));
-            //更新
+            //先把所有的title变成黑色
+            title.setTextColor(Color.BLACK);
 
+            int id = v.getId();
+           // Log.e("点击了",String.valueOf(id));
+            //更新
+            title = v.findViewById(id);
+           // Log.e("控件为：", String.valueOf(title));
+            //修改指定title为按下的颜色
+           title.setTextColor(Color.BLUE);
             group = new String[] {"晃光五金"+id,"清顺辅料"+id,"360"+id,"安踏"+id };
             carsList = new String[][]{
                     {"张三", "李四", "王五", "赵六"},

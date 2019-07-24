@@ -1,26 +1,32 @@
 package comdemo.example.dell.uitestdemo2.bean;
 
+import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
+
 import java.io.Serializable;
 
+import comdemo.example.dell.uitestdemo2.R;
+
 public class GoodsEntity implements Serializable {
-    public String imgPath;//图片地址
+    public int imgPath;//图片地址
     public String goodsName;//货物名称
     public String goodsPrice;//货物价格
 
     public GoodsEntity() {
     }
 
-    public GoodsEntity(String imgPath, String goodsName, String goodsPrice) {
+    public GoodsEntity(int imgPath, String goodsName, String goodsPrice) {
         this.imgPath = imgPath;
         this.goodsName = goodsName;
         this.goodsPrice = goodsPrice;
     }
 
-    public String getImgPath() {
+    public int getImgPath() {
         return imgPath;
     }
 
-    public void setImgPath(String imgPath) {
+
+    public void setImgPath(int imgPath) {
         this.imgPath = imgPath;
     }
 

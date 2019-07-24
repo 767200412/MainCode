@@ -31,13 +31,14 @@
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:padding="10dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 app:arrowWidth="8dp"
                 app:angle="8dp"
                 app:arrowHeight="10dp"
                 app:arrowPosition="14dp"
                 app:arrowLocation="left"
-                app:bubbleColor="#7EC0EE"/>
+                app:bubbleColor="#ffffff"
+                android:textIsSelectable="true"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -61,13 +62,13 @@
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:padding="10dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 app:arrowWidth="8dp"
                 app:angle="8dp"
                 app:arrowHeight="10dp"
                 app:arrowPosition="14dp"
                 app:arrowLocation="right"
-                app:bubbleColor="#7EC0EE"/>
+                app:bubbleColor="#ffffff"/>
 
         </LinearLayout>
         <ImageView
