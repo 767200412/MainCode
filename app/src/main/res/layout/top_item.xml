@@ -10,7 +10,7 @@
         android:text="供应商(12)"
         android:textColor="#ff232323"
         android:textSize="18sp"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />

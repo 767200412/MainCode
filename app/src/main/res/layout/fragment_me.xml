@@ -73,7 +73,7 @@
         <Button
             android:id="@+id/button"
             android:layout_width="80dp"
-            android:layout_height="26dp"
+            android:layout_height="37dp"
             android:layout_marginTop="46dp"
             android:background="@drawable/button1_shape"
             android:padding="10dp"
@@ -96,7 +96,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
-        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+        <TextView
             android:id="@+id/button2"
             android:layout_width="184dp"
             android:layout_height="64dp"
@@ -104,6 +104,8 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/button2_shape"
             android:drawableLeft="@mipmap/ic_me_third_service"
+            android:paddingLeft="16dp"
+            android:drawablePadding="16dp"
             android:gravity="center_vertical"
             android:text="第三方服务"
             android:textColor="#ff232323"
@@ -111,7 +113,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+        <TextView
             android:id="@+id/button3"
             android:layout_width="184dp"
             android:layout_height="64dp"
@@ -120,6 +122,8 @@
             android:background="@drawable/button2_shape"
             android:drawableLeft="@mipmap/ic_me_collect"
             android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="16dp"
             android:text="收藏夹"
             android:textColor="#ff232323"
             android:textSize="16sp"
@@ -129,7 +133,7 @@
             app:layout_constraintTop_toTopOf="@+id/button2"
             />
 
-        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+        <TextView
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="64dp"
@@ -137,6 +141,8 @@
             android:background="@drawable/button2_shape"
             android:drawableLeft="@mipmap/ic_me_help"
             android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="16dp"
             android:text="帮助中心"
             android:textColor="#ff232323"
             android:textSize="16sp"
@@ -144,13 +150,15 @@
             app:layout_constraintStart_toStartOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-        <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+        <TextView
             android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:background="@drawable/button2_shape"
             android:drawableLeft="@mipmap/ic_me_settiong"
             android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="16dp"
             android:text="设置"
             android:textColor="#ff232323"
             android:textSize="16sp"

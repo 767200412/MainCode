@@ -37,7 +37,7 @@
                 app:arrowHeight="10dp"
                 app:arrowPosition="14dp"
                 app:arrowLocation="left"
-                app:bubbleColor="#ffffff"
+                app:bubbleColor="#ff4694ff"
                 android:textIsSelectable="true"/>
 
         </LinearLayout>
@@ -68,7 +68,7 @@
                 app:arrowHeight="10dp"
                 app:arrowPosition="14dp"
                 app:arrowLocation="right"
-                app:bubbleColor="#ffffff"/>
+                app:bubbleColor="#ff4694ff"/>
 
         </LinearLayout>
         <ImageView

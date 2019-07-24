@@ -103,6 +103,17 @@ public class ChatViewActivity extends AppCompatActivity {
                     linearLayout.setVisibility(View.GONE);
                 }
             }
+        }); 
+
+        mImBtnAdd.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    //没有焦点 隐藏菜单
+                    Log.e("焦点不在按钮上", String.valueOf(hasFocus));
+                    linearLayout.setVisibility(View.GONE);
+                }
+            }
         });
 
         inputText.addTextChangedListener(new TextWatcher() {

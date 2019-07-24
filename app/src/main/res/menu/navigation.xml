@@ -4,21 +4,29 @@
     <item
         android:id="@+id/tab_message"
         android:icon="@mipmap/home_ic_message_unormal"
-        android:title="消息"/>
+        android:title="消息"
+        android:textColor="#ff999999"
+        android:textSize="10sp"/>
 
     <item
         android:id="@+id/tab_contacts"
         android:icon="@mipmap/home_ic_contacts_normal"
-        android:title="通讯录"/>
+        android:title="通讯录"
+        android:textColor="#ff999999"
+        android:textSize="10sp"/>
 
     <item
         android:id="@+id/tab_management"
         android:icon="@mipmap/home_ic_management_normal"
-        android:title="管理"/>
+        android:title="管理"
+        android:textColor="#ff999999"
+        android:textSize="10sp"/>
 
     <item
         android:id="@+id/tab_me"
         android:icon="@mipmap/home_ic_me_normal"
-        android:title="我的"/>
+        android:title="我的"
+        android:textColor="#ff999999"
+        android:textSize="10sp"/>
 
 </menu>

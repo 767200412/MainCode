@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.ManagementFragment"
     android:orientation="vertical">
@@ -16,7 +17,8 @@
         app:rightIcon="@mipmap/nav_ic_scan"
         app:title="协同企业管理"
         app:titleColor="#ff232323"
-        app:titleSize="18sp"></com.hjq.bar.TitleBar>
+        app:titleSize="18sp"
+        app:backButton="false"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,9 +30,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_gravity="center_vertical"
             android:src="@mipmap/logo_fccn_pay" />
 
         <TextView
@@ -46,8 +47,8 @@
             android:id="@+id/btn_pay"
             android:layout_width="wrap_content"
             android:layout_height="26dp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
             android:background="@drawable/button3_shape"
             android:text="立即进入"
             android:textColor="#ffffffff"
@@ -74,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
             app:columnCount="4"
             app:rowCount="1">
 
@@ -157,6 +159,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
             app:columnCount="4"
             app:rowCount="1">
 
@@ -239,6 +242,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
             app:columnCount="4"
             app:rowCount="2">
 
