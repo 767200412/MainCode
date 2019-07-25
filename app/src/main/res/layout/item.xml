@@ -12,16 +12,14 @@
         android:layout_width="125dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:gravity="center_vertical|left"
-        android:text="关系管理助手"
 
+        android:text="关系管理助手"
         android:textColor="#ff232323"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/item_goods_price"
         app:layout_constraintStart_toEndOf="@+id/item_goods_img"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/item_goods_img" />
 
     <ImageView
         android:id="@+id/item_goods_img"
@@ -39,12 +37,11 @@
         android:id="@+id/item_goods_price"
         android:layout_width="125dp"
         android:layout_height="19dp"
-        android:layout_marginBottom="4dp"
-        android:gravity="center_vertical|left"
-        android:text="#91自定义消息]"
+        android:gravity="left"
+        android:text="[自定义消息]"
         android:textColor="#ff999999"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/item_goods_img"
         app:layout_constraintEnd_toEndOf="@+id/item_goods_name"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/item_goods_name"
@@ -54,9 +51,9 @@
         android:id="@+id/textView5"
         android:layout_width="45dp"
         android:layout_height="47dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginStart="331dp"
-        android:layout_marginTop="12dp"
+        android:gravity="center|top"
         android:text="08:50"
         android:textColor="#ff999999"
         android:textSize="12sp"
@@ -64,6 +61,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/item_goods_name" />
 </android.support.constraint.ConstraintLayout>

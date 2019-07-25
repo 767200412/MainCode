@@ -85,6 +85,7 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
             mItemGoodsName = (TextView) itemView.findViewById(R.id.item_goods_name);
             mItemGoodsPrice = (TextView) itemView.findViewById(R.id.item_goods_price);
             mItemTime = (TextView) itemView.findViewById(R.id.textView5);
+            //设置未读消息小红点
             badge = new QBadgeView(context).bindTarget(mItemTime);
             badge.setBadgeGravity(Gravity.CENTER|Gravity.TOP);
             badge.setGravityOffset(0,20,true);
