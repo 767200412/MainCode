@@ -31,7 +31,7 @@
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/button2_shape"
                 android:orientation="horizontal">
@@ -39,32 +39,35 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
                     android:src="@mipmap/logo_fccn_pay" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="8dp"
-                    android:gravity="center_vertical"
+                    android:gravity="center_vertical|left"
                     android:text="B2B财务管理转账支付"
                     android:textColor="#ffff8f43"
                     android:textSize="12sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+
                     <Button
                         android:id="@+id/btn_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="26dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginLeft="26dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/button3_shape"
+                        android:background="@drawable/button5_shape"
                         android:gravity="center"
                         android:text="立即进入"
                         android:textColor="#000000"
                         android:textSize="14sp" />
-                </LinearLayout>
+
 
 
             </LinearLayout>
