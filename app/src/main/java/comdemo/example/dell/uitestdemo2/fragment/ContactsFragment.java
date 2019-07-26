@@ -182,7 +182,7 @@ public class ContactsFragment extends Fragment {
         public void onClick(View v){
             //先把所有的title变成黑色
             title.setTextColor(Color.parseColor("#ff232323"));
-            //title.setBackground(null);
+            title.setBackground(null);
 
             int id = v.getId();
            // Log.e("点击了",String.valueOf(id));
@@ -191,7 +191,7 @@ public class ContactsFragment extends Fragment {
            // Log.e("控件为：", String.valueOf(title));
             //修改指定title为按下的颜色
            title.setTextColor(Color.parseColor("#ff238efa"));
-           //title.set(getResources().getDrawable(R.drawable.top_item_select));
+           title.setBackgroundResource(R.drawable.top_item_select);
             group = new String[] {"晃光五金"+id,"清顺辅料"+id,"360"+id,"安踏"+id };
             carsList = new String[][]{
                     {"张三", "李四", "王五", "赵六"},
