@@ -128,7 +128,7 @@
                     android:maxLines="1"
                     android:paddingRight="22dp"
                     android:padding="16dp"
-                    android:drawablePadding="16dp"
+                    android:drawablePadding="10dp"
                     android:text="第三方服务"
                     android:textColor="#ff232323"
                     android:textSize="16sp" />
@@ -142,11 +142,10 @@
                     android:layout_weight="1"
                     android:background="@drawable/button2_shape"
                     android:drawableLeft="@mipmap/ic_me_collect"
+                    android:drawablePadding="10dp"
                     android:gravity="center|left"
                     android:maxLines="1"
-                    android:paddingRight="38dp"
-                    android:paddingLeft="16dp"
-                    android:drawablePadding="16dp"
+                    android:padding="16dp"
                     android:text="收藏夹"
                     android:textColor="#ff232323"
                     android:textSize="16sp" />
@@ -171,7 +170,7 @@
                     android:padding="16dp"
                     android:maxLines="1"
                     android:text="帮助中心"
-                    android:drawablePadding="16dp"
+                    android:drawablePadding="10dp"
                     android:textColor="#ff232323"
                     android:textSize="16sp" />
 
@@ -185,7 +184,7 @@
                     android:background="@drawable/button2_shape"
                     android:drawableLeft="@mipmap/ic_me_settiong"
                     android:gravity="center|left"
-                    android:drawablePadding="16dp"
+                    android:drawablePadding="10dp"
                     android:maxLines="1"
                     android:padding="16dp"
                     android:text="设置"
