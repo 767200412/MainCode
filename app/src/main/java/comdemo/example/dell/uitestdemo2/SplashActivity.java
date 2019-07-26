@@ -10,6 +10,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash);
         new Thread( new Runnable( ) {
             @Override
             public void run() {
@@ -19,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
                     public void run() {
                         // 这里可以睡几秒钟，如果要放广告的话
                         // sleep(3000);
-                        Log.e("启动页","启动页打开");
+                        // Log.e("启动页","启动页打开");
                         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                         startActivity(intent);
                         SplashActivity.this.finish();
