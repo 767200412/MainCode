@@ -1,6 +1,7 @@
 package comdemo.example.dell.uitestdemo2.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -87,6 +88,7 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
             mItemTime = (TextView) itemView.findViewById(R.id.textView5);
             //设置未读消息小红点
             badge = new QBadgeView(context).bindTarget(mItemTime);
+            badge.setBadgeBackgroundColor(Color.parseColor("#ffff4444"));
             badge.setBadgeGravity(Gravity.CENTER|Gravity.TOP);
             badge.setGravityOffset(0,20,true);
             badge.setOnDragStateChangedListener(new Badge.OnDragStateChangedListener() {

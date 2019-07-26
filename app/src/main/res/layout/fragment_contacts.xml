@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/colorBackGround">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +20,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="7dp"
             android:layout_marginBottom="7dp"
-            android:layout_weight="4"
+            android:layout_weight="260"
             android:background="@drawable/edit_background2"
             android:drawableLeft="@mipmap/nav_ic_search_g1"
             android:hint="请输入关键字" />
@@ -30,9 +31,9 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="7dp"
-            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="68"
             android:background="@drawable/button4_shape"
             android:text="关系管理"
             android:textColor="#ffffffff"
@@ -64,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:groupIndicator="@null"
-        android:background="@drawable/button2_shape"
+        android:background="@color/colorBackGround"
         android:layout_marginTop="8dp"/>
 
 

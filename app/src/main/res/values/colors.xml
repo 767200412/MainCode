@@ -3,7 +3,8 @@
     <color name="colorPrimary">#3F51B5</color><!--#3F51B5 -->
     <color name="colorPrimaryDark">#303F9F</color><!--#303F9F -->
     <color name="colorAccent">#FF4081</color>
-    <color name="colorBackGround">#ffffff</color>
+    <color name="colorBackGround">#fff5f5f5</color>
     <color name="colorSelect">#ff238efa</color>
     <color name="colorUnSelect">#ff999999</color>
+    <color name="white">#ffffff</color>
 </resources>

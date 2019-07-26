@@ -10,10 +10,11 @@
     <TextView
         android:id="@+id/item_goods_name"
         android:layout_width="125dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
         android:gravity="center_vertical|left"
-
+        android:padding="0dp"
         android:text="关系管理助手"
         android:textColor="#ff232323"
         android:textSize="15sp"
@@ -31,13 +32,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_notice_up_down" />
+        app:srcCompat="@mipmap/ic_notice_up_down"
+        android:scaleType="centerInside"/>
 
     <TextView
         android:id="@+id/item_goods_price"
         android:layout_width="125dp"
         android:layout_height="19dp"
+        android:layout_marginBottom="1dp"
         android:gravity="left"
+        android:padding="0dp"
         android:text="[自定义消息]"
         android:textColor="#ff999999"
         android:textSize="13sp"
