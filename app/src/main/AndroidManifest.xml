@@ -15,7 +15,8 @@
             android:windowSoftInputMode="adjustPan|stateHidden">
 
         </activity>
-        <activity android:name=".ChatViewActivity" />
+        <activity android:name=".ChatViewActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>

@@ -2,14 +2,22 @@ package comdemo.example.dell.uitestdemo2.fragment;
 
 
 import android.content.Intent;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -138,7 +146,45 @@ public class MessageFragment extends Fragment {
         //参数是：上下文、列表方向（横向还是纵向）、是否倒叙
         mCollectRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         //设置item的分割线
-        mCollectRecyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
+        /*
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL);
+        dividerItemDecoration.setDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.shape_devider_line));
+        mCollectRecyclerView.addItemDecoration(dividerItemDecoration);
+        */
+        //mCollectRecyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
+        mCollectRecyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
+            @Override
+            public void onDraw(@NonNull Canvas c, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
+                super.onDraw(c, parent, state);
+                Paint paint = new Paint();
+                paint.setColor(Color.parseColor("#ffe3e3e3"));
+                //分割线高度
+                int mDividerHeight = 1;
+                //final int left = parent.getPaddingLeft();
+
+                final  int left = 32;
+                final int right = parent.getMeasuredWidth();
+                final int childSize = parent.getChildCount();
+                for (int i = 0; i < childSize-1; i++){
+                    final View child = parent.getChildAt(i);
+                    RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) child.getLayoutParams();
+                    final int top = child.getBottom() + layoutParams.bottomMargin;
+                    final int bottom = top + mDividerHeight;
+                    c.drawRect(left,top,right,bottom,paint);
+                }
+
+
+
+            }
+
+            @Override
+            public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
+                super.getItemOffsets(outRect, view, parent, state);
+                outRect.set(0, 0, 0, 1);
+            }
+        });
+
+
         //RecyclerView中没有item的监听事件，需要自己在适配器中写一个监听事件的接口。参数根据自定义
         mCollectRecyclerAdapter.setOnItemClickListener(new CollectRecycleAdapter.OnItemClickListener() {
             @Override

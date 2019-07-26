@@ -14,7 +14,7 @@
         <shape>
             <!--整个空间的背景颜色-->
             <solid android:color="@color/white" />
-            <padding android:bottom="15dp"/>
+            <padding android:bottom="18dp"/>
 
         </shape>
     </item>

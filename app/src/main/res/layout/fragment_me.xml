@@ -78,7 +78,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/button"
                 android:layout_width="80dp"
                 android:layout_height="26dp"
@@ -87,6 +86,7 @@
                 android:text="下载名片"
                 android:textColor="#ffffffff"
                 android:textSize="14sp"
+                android:gravity="center"
                 app:layout_constraintBottom_toBottomOf="@+id/textView3"
                 app:layout_constraintEnd_toEndOf="@+id/imageView"
                 app:layout_constraintStart_toStartOf="@+id/imageView" />
@@ -106,6 +106,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="32dp"
                 android:text="常用工具"
+                android:textStyle="bold"
                 android:textColor="#ff232323"
                 android:textSize="17sp" />
 

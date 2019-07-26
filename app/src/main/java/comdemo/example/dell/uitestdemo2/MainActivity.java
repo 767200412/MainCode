@@ -22,6 +22,9 @@ import comdemo.example.dell.uitestdemo2.fragment.ManagementFragment;
 import comdemo.example.dell.uitestdemo2.fragment.MeFragment;
 import comdemo.example.dell.uitestdemo2.fragment.MessageFragment;
 
+import static comdemo.example.dell.uitestdemo2.Utils.FlymeSetStatusBarLightMode.FlymeSetStatusBarLightMode;
+import static comdemo.example.dell.uitestdemo2.Utils.MIUISetStatusBarLightMode.MIUISetStatusBarLightMode;
+
 public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
@@ -80,6 +83,16 @@ public class MainActivity extends AppCompatActivity {
 
         */
         setContentView(R.layout.activity_main);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
+            localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
+        }
+
+        MIUISetStatusBarLightMode(this.getWindow(), true);
+        FlymeSetStatusBarLightMode(this.getWindow(), true);
+
+
 
         mViewPager=(ViewPager) findViewById(R.id.mViewPager);//获取到ViewPager
         navigation = (BottomNavigationView) findViewById(R.id.navigation);
