@@ -1,226 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.MeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="0dp"
-                android:layout_height="176dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/view_shape"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/imageView"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginTop="32dp"
-                android:src="@mipmap/ic_notice_up_down"
-                app:layout_constraintEnd_toEndOf="@+id/view"
-                app:layout_constraintTop_toTopOf="@+id/view"
-                app:riv_corner_radius="8dp"
-                app:riv_oval="true"
-                app:riv_border_width="2dp"
-                app:riv_border_color="#40ffffff"/>
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="40dp"
-                android:text="王百川"
-                android:textColor="#ffffffff"
-                android:textSize="26sp"
-                app:layout_constraintStart_toStartOf="@+id/view"
-                app:layout_constraintTop_toTopOf="@+id/view" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="54dp"
-                android:text="福建省辅城网络科技有限公司"
-                android:textColor="#ffffffff"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="@+id/view"
-                app:layout_constraintStart_toStartOf="@+id/textView" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="董事长"
-                android:textColor="#ffffffff"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-            <TextView
-                android:id="@+id/button"
-                android:layout_width="80dp"
-                android:layout_height="26dp"
-                android:background="@drawable/button1_shape"
-                android:padding="0dp"
-                android:text="下载名片"
-                android:textColor="#ffffffff"
-                android:textSize="14sp"
-                android:gravity="center"
-                app:layout_constraintBottom_toBottomOf="@+id/textView3"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="@+id/imageView" />
-
-        </android.support.constraint.ConstraintLayout>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/view_shape"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="32dp"
-                android:text="常用工具"
-                android:textStyle="bold"
-                android:textColor="#ff232323"
-                android:textSize="17sp" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="32dp"
+        android:src="@mipmap/ic_notice_up_down"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:riv_border_color="#40ffffff"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="8dp"
+        app:riv_oval="true" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="王百川"
+        android:textColor="#ffffffff"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
 
-                <TextView
-                    android:id="@+id/button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/button2_shape"
-                    android:drawableLeft="@mipmap/ic_me_third_service"
-                    android:gravity="center|left"
-                    android:maxLines="1"
-                    android:paddingRight="22dp"
-                    android:padding="16dp"
-                    android:drawablePadding="10dp"
-                    android:text="第三方服务"
-                    android:textColor="#ff232323"
-                    android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:text="福建省辅城网络科技有限公司"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
-                <TextView
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/button2_shape"
-                    android:drawableLeft="@mipmap/ic_me_collect"
-                    android:drawablePadding="10dp"
-                    android:gravity="center|left"
-                    android:maxLines="1"
-                    android:padding="16dp"
-                    android:text="收藏夹"
-                    android:textColor="#ff232323"
-                    android:textSize="16sp" />
-            </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="董事长"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/button2_shape"
-                    android:drawableLeft="@mipmap/ic_me_help"
-                    android:gravity="center|left"
-                    android:padding="16dp"
-                    android:maxLines="1"
-                    android:text="帮助中心"
-                    android:drawablePadding="10dp"
-                    android:textColor="#ff232323"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/button5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/button2_shape"
-                    android:drawableLeft="@mipmap/ic_me_settiong"
-                    android:gravity="center|left"
-                    android:drawablePadding="10dp"
-                    android:maxLines="1"
-                    android:padding="16dp"
-                    android:text="设置"
-                    android:textColor="#ff232323"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
-                android:id="@+id/button6"
-                android:layout_width="240sp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/button3_shape"
-                android:drawableLeft="@mipmap/ic_me_service"
-                android:drawablePadding="7dp"
-                android:gravity="center_vertical"
-                android:text="在线客服"
-                android:textColor="#ffff9700"
-                android:textSize="16sp" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:background="@drawable/button1_shape"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="下载名片"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
 
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="常用工具"
+        android:textColor="#ff232323"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/button2_shape"
+        android:drawableLeft="@mipmap/ic_me_third_service"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:paddingRight="22dp"
+        android:text="第三方服务"
+        android:textColor="#ff232323"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/button2_shape"
+        android:drawableLeft="@mipmap/ic_me_collect"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:text="收藏夹"
+        android:textColor="#ff232323"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button2_shape"
+        android:drawableLeft="@mipmap/ic_me_help"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:text="帮助中心"
+        android:textColor="#ff232323"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button2_shape"
+        android:drawableLeft="@mipmap/ic_me_settiong"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:text="设置"
+        android:textColor="#ff232323"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
 
 
+    <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
+        android:id="@+id/button6"
+        android:layout_width="240sp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button3_shape"
+        android:drawableLeft="@mipmap/ic_me_service"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:text="在线客服"
+        android:textColor="#ffff9700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -95,6 +95,8 @@ public class ContactsFragment extends Fragment {
 
         //tvLoadMore = (TextView) view.findViewById(R.id.tv_load_more);
         elvCompany = (ExpandableListView) view.findViewById(R.id.android_list);
+        //设置子列表的分割线
+        //elvCompany.setChildDivider(getResources().getDrawable(R.drawable.child_divider));
         /*
         adapter = new BuddyAdapter(group, carsList, getContext());
         elvCompany.setAdapter(adapter);

@@ -88,7 +88,10 @@ public class BuddyAdapter extends BaseExpandableListAdapter {
         convertView = inflater.inflate(R.layout.child, null);
         TextView nickTextView = (TextView) convertView
                 .findViewById(R.id.tv_child);
-
+        View divider = (View) convertView.findViewById(R.id.divider);
+        if (isLastChild){
+            divider.setVisibility(View.GONE);
+        }
         nickTextView.setText(getChild(groupPosition, childPosition).toString());
 
         return convertView;
@@ -99,5 +102,7 @@ public class BuddyAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
     }
+
+
 
 }
