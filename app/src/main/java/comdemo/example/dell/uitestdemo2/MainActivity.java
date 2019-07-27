@@ -17,6 +17,7 @@ import android.view.WindowManager;
 
 import java.util.ArrayList;
 
+import comdemo.example.dell.uitestdemo2.Utils.StatusBarUtil;
 import comdemo.example.dell.uitestdemo2.fragment.ContactsFragment;
 import comdemo.example.dell.uitestdemo2.fragment.ManagementFragment;
 import comdemo.example.dell.uitestdemo2.fragment.MeFragment;
@@ -84,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
         */
         setContentView(R.layout.activity_main);
 
+        StatusBarUtil.transparencyBar(this); //设置状态栏全透明
+        StatusBarUtil.StatusBarLightMode(this); //设置白底黑字
+        /*
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
             localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
@@ -91,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
         MIUISetStatusBarLightMode(this.getWindow(), true);
         FlymeSetStatusBarLightMode(this.getWindow(), true);
-
+        */
 
 
         mViewPager=(ViewPager) findViewById(R.id.mViewPager);//获取到ViewPager
