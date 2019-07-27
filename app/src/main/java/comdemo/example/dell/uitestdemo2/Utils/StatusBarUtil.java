@@ -13,6 +13,8 @@ import com.gyf.immersionbar.ImmersionBar;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+import comdemo.example.dell.uitestdemo2.R;
+
 public class StatusBarUtil {
 
     /**
@@ -59,7 +61,7 @@ public class StatusBarUtil {
                 result = 3;
             } else {
                 //其他的都设置状态栏成半透明的,以下设置半透明是调用第三方ImmersionBar库的，根据个人需求更改，
-                ImmersionBar.with(activity).statusBarDarkFont(true, 0.5f).init();
+                ImmersionBar.with(activity).statusBarColor(R.color.white).statusBarDarkFont(true, 0.5f).init();
             }
         }
         return result;

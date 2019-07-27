@@ -23,8 +23,6 @@ import comdemo.example.dell.uitestdemo2.fragment.ManagementFragment;
 import comdemo.example.dell.uitestdemo2.fragment.MeFragment;
 import comdemo.example.dell.uitestdemo2.fragment.MessageFragment;
 
-import static comdemo.example.dell.uitestdemo2.Utils.FlymeSetStatusBarLightMode.FlymeSetStatusBarLightMode;
-import static comdemo.example.dell.uitestdemo2.Utils.MIUISetStatusBarLightMode.MIUISetStatusBarLightMode;
 
 public class MainActivity extends AppCompatActivity {
 
