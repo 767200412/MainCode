@@ -50,6 +50,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:text="王百川"
+        android:textStyle="bold"
         android:textColor="#ffffffff"
         android:textSize="26sp"
         app:layout_constraintStart_toStartOf="@+id/view"
@@ -123,9 +124,9 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline1"
-        app:layout_constraintHorizontal_weight="1"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
 
     <TextView
         android:id="@+id/button3"
@@ -190,7 +191,7 @@
     <comdemo.example.dell.uitestdemo2.Utils.DrawableTextView
         android:id="@+id/button6"
         android:layout_width="240sp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:background="@drawable/button3_shape"

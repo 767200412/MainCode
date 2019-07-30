@@ -19,10 +19,7 @@
         app:titleColor="#ff232323"
         app:titleSize="18sp"
         app:backButton="false"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ffe3e3e3"/>
+
 
 
 
@@ -73,7 +70,8 @@
                     android:gravity="center"
                     android:text="立即进入"
                     android:textColor="#ffffffff"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp"
+                    style="?android:attr/borderlessButtonStyle"/>
 
             </LinearLayout>
 

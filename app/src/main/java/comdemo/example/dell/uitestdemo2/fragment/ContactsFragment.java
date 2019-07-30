@@ -4,10 +4,15 @@ package comdemo.example.dell.uitestdemo2.fragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.SpannedString;
+import android.text.style.AbsoluteSizeSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
@@ -39,6 +44,7 @@ public class ContactsFragment extends Fragment {
     private HorizontalScrollView hs;
     private LinearLayout ls;
     private TextView title;
+    private EditText editText;
     private BuddyAdapter adapter;
 
     private String[] titleName = new String[]{"客户","供应商","加工商","服务商","物流","客户","客户","客户","客户"};
@@ -85,6 +91,14 @@ public class ContactsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_contacts, container, false);
+
+        editText = (EditText) view.findViewById(R.id.edit_search);
+        // 设置hint字体大小
+        SpannableString ss = new SpannableString("请输入关键字");
+        AbsoluteSizeSpan ass = new AbsoluteSizeSpan(12, true);
+        ss.setSpan(ass, 0, ss.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        // 设置hint
+        editText.setHint(new SpannedString(ss)); // 一定要进行转换,否则属性会消失
 
         hs = (HorizontalScrollView)view.findViewById(R.id.hs);
         ls = (LinearLayout)view.findViewById(R.id.liner);

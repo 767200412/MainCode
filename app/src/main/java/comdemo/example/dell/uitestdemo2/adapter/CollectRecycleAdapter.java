@@ -91,6 +91,8 @@ public class CollectRecycleAdapter extends RecyclerView.Adapter<CollectRecycleAd
             badge.setBadgeBackgroundColor(Color.parseColor("#ffff4444"));
             badge.setBadgeGravity(Gravity.CENTER|Gravity.TOP);
             badge.setGravityOffset(0,20,true);
+            //取消阴影
+            badge.setShowShadow(false);
             badge.setOnDragStateChangedListener(new Badge.OnDragStateChangedListener() {
                 @Override
                 public void onDragStateChanged(int dragState, Badge badge, View targetView) {
