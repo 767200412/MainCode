@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.MeFragment">
+    tools:context=".fragment.MeFragment"
+    android:background="@color/white">
 
 
     <android.support.constraint.Guideline
@@ -50,9 +51,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:text="王百川"
-        android:textStyle="bold"
         android:textColor="#ffffffff"
         android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -110,45 +111,40 @@
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/button2_shape"
-        android:drawableLeft="@mipmap/ic_me_third_service"
-        android:drawablePadding="10dp"
-        android:gravity="center|left"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/button6_shape"
+        android:gravity="center"
         android:maxLines="1"
-        android:padding="16dp"
-        android:paddingRight="22dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
         android:text="第三方服务"
         android:textColor="#ff232323"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/guideline1" />
 
     <TextView
         android:id="@+id/button3"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="15dp"
-        android:layout_weight="1"
-        android:background="@drawable/button2_shape"
-        android:drawableLeft="@mipmap/ic_me_collect"
-        android:drawablePadding="10dp"
-        android:gravity="center|left"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button6_shape"
+        android:gravity="center"
         android:maxLines="1"
-        android:padding="16dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
         android:text="收藏夹"
         android:textColor="#ff232323"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/button2" />
 
     <TextView
@@ -156,12 +152,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/button2_shape"
-        android:drawableLeft="@mipmap/ic_me_help"
-        android:drawablePadding="10dp"
-        android:gravity="center|left"
+        android:background="@drawable/button6_shape"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
         android:maxLines="1"
-        android:padding="16dp"
         android:text="帮助中心"
         android:textColor="#ff232323"
         android:textSize="16sp"
@@ -172,13 +169,14 @@
     <TextView
         android:id="@+id/button5"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/button2_shape"
-        android:drawableLeft="@mipmap/ic_me_settiong"
-        android:drawablePadding="10dp"
-        android:gravity="center|left"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button6_shape"
+        android:gravity="center"
         android:maxLines="1"
-        android:padding="16dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
         android:text="设置"
         android:textColor="#ff232323"
         android:textSize="16sp"
@@ -205,5 +203,82 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_me_third_service"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16944444" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_me_collect"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_me_help"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_me_settiong"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
 
 </android.support.constraint.ConstraintLayout>
