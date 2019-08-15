@@ -1,6 +1,7 @@
 package comdemo.example.dell.uitestdemo2.fragment;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -20,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import comdemo.example.dell.uitestdemo2.R;
+import comdemo.example.dell.uitestdemo2.SreachActivity;
 import comdemo.example.dell.uitestdemo2.adapter.BuddyAdapter;
 
 /**
@@ -105,6 +107,16 @@ public class ContactsFragment extends Fragment {
         initView();
 
 
+        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    Intent intent = new Intent(getContext(), SreachActivity.class);
+                    startActivity(intent);
+
+                }
+            }
+        });
 
 
         //tvLoadMore = (TextView) view.findViewById(R.id.tv_load_more);

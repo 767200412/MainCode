@@ -64,10 +64,7 @@
 
 
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ffe3e3e3"/>
+  
 
     <ExpandableListView
         android:id="@+id/android_list"
